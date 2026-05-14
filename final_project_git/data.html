@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="The page that contains the opening hours and weekly events">
+    <meta name="keywords" content="Bakery, Breaky, events, schedules">
+    <meta name="author" content="John Doe">
+    <meta name="viewport"
+          content="width=device-width,
+             initial-scale=1">
+    <title>Our Hours</title>
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <p><a href="01index.html">
+        <img class="opaci" src="images/breakybakery.svg" alt="The Site Logo for Breaky Bakery">
+    </a>
+    </p>
+    <h1>Breaky Bakery</h1>
+</header>
+<nav class="navbar">
+    <ul>
+        <li><a href="01index.html">Home</a></li>
+        <li><a href="02About.html">About Us</a></li>
+        <li><a href="03products.html">Products</a></li>
+        <li><a href="04media.html">Media</a></li> <!--  IDK-->
+        <li><a href="05data.html">Information</a></li>
+        <li><a href="06contact.html">Contact Form</a></li>
+    </ul>
+</nav>
+<main>
+<h2>Our Hours and Events</h2>
+    <table class="hours-table">
+        <caption class ="italizize" >Opening Hours and Weekly Events</caption>
+        <thead>
+    <tr>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+        <th>Sunday</th>
+    </tr>
+    </thead>
+        <tbody>
+        <tr>
+            <td data-label="Monday">6am - 10PM</td>
+            <td data-label="Tuesday">7am - 9PM</td>
+            <td data-label="Wednesday">7am - 9PM</td>
+            <td data-label="Thursday">7am - 9PM</td>
+            <td data-label="Friday">7am - 11PM</td>
+            <td data-label="Saturday">10am - 9PM</td>
+            <td data-label="Sunday">11am - 4PM</td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <th colspan="7" class="events">Weekly Events</th>
+        </tr>
+        <tr class="weekly-events-row">
+            <td data-label="Monday">6am–10am: Free bread with an order of coffee</td>
+            <td data-label="Tuesday" class="nothing">Nothing</td>
+            <td data-label="Wednesday">11am–1pm: Buy 2 items, get one at a 25% discount</td>
+            <td data-label="Thursday" class="nothing">Nothing</td>
+            <td data-label="Friday">7pm–11pm: Movie Night within the bakery</td>
+            <td data-label="Saturday">All Day: 10% discounts on bakery goods</td>
+            <td data-label="Sunday">All Day: 10% discounts on bakery goods</td>
+        </tr>
+        </tfoot>
+    </table>
+    <br>
+</main>
+<footer>
+    &copy; Copyright 2026. All Rights Reserved. <br>
+    <a href="mailto:BreakyBakery@cheify.net">
+        BreakyBakery@cheify.net
+    </a>
+    <br>
+    <a class = "phone-link" href="tel:+555840581105">
+        Call us!
+    </a>
+    <span class="phone-text">Call us: +555840581105</span>
+</footer>
+</body>
+<script src="scripts/index.js">
+</script>
+</html>

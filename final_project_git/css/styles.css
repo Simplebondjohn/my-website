@@ -1,0 +1,460 @@
+
+body {
+    margin: 0;
+    font-family: Verdana, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    gap: 0.75em;
+}
+footer {
+    width: 100%;
+    display: block;
+    text-align: center;
+    background: rgba(146, 92, 63, 0.42);
+}
+
+
+footer a,
+footer a:visited {
+    color: rgba(108, 0, 74, 0.87);
+}
+
+footer a {
+    display: inline-block;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+
+.navbar li:hover {
+    background: radial-gradient(#925C3F, #F3A668);
+}
+header img {
+    width: 6em;
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    margin: 0;
+    font-family: Georgia, serif;
+    text-align: center;
+}
+
+#first-image{
+    height: 15em;
+    width: 15em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+h2 {
+    font-family: "Baskerville Old Face", traditional serif;
+    text-align: center;
+}
+
+h3 {
+    font-family: "Palatino Linotype", Palatino, serif;
+    text-align: center;
+}
+.first-header{
+    text-shadow: #cc835c .045em .055em;
+    padding: 0.5em;
+}
+
+.products-wrapper {
+    width: 100%;
+}
+.opaci{
+    opacity: 85%;
+}
+.opaci:hover{
+    opacity: 100%;
+}
+.products-wrapper::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.food-column,
+.drink-column,
+.aside-column {
+    box-sizing: border-box;
+    padding: 1em;
+    margin-bottom: 1em;
+    background-color: #F2CAA7;
+    border: 1px solid #925C3F;
+    border-radius: 0.5em;
+}
+
+.food-column img,
+.drink-column img,
+.aside-column img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 0.5em;
+}
+
+figure {
+    margin: 0 0 1em 0;
+}
+
+figcaption {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 0.5em;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    text-overflow: initial;
+}
+
+.navbar li {
+    padding: 1em;
+    text-align: center;
+    background: radial-gradient(#B0714D, #F2CAA7) fixed;
+    border-bottom: 1.25px solid black;
+}
+
+.navbar a {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+.navbar li:hover {
+    background: radial-gradient(#925C3F, #F3A668);
+}
+
+.phone-link {
+    display: inline;
+}
+
+.phone-text {
+    display: none;
+}
+
+
+.contact-form label {
+    float: left;
+    text-align: right;
+    width: 10em;
+    padding-right: 0.3em;
+    padding-bottom: 0.1em;
+    box-sizing: border-box;
+
+}
+.contact-form input {
+    margin-bottom: 0.3em;
+}
+
+.contact-form textarea {
+    width: 20em;
+    height: 6em;
+    resize: vertical;
+    margin-bottom: 0.5em;
+}
+#preorder-fields {
+    display: none;
+    margin-top: 0.5em;
+}
+
+section main{
+    text-align: center;
+    display: block;
+    width: 100%;
+    background-color: #F2CAA7;
+}
+
+.button input {
+    background-color: #f8cca7;
+}
+
+.button input:hover {
+    background-color: #b57451;
+}
+main img{
+    max-width: 100%;
+    height: auto;
+
+}
+.bakery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: fit-content;
+
+}
+
+#firstmain,
+.bodystyles:not(a){
+    box-sizing: border-box;
+    width: min(900px, 100%);
+    margin: 1em auto;
+    padding: 1em;
+    border: 1px solid #925C3F;
+    border-radius: 0.5em;
+    text-align: center;
+}
+.bodystyles {
+    background-color: #F2CAA7;
+
+}
+.bodystyles #coloringlink  {
+    color: #502710;
+}
+
+#firstmain {
+    background: radial-gradient(#936242, #F3A668);
+    padding-bottom: 2em;
+}
+.italizize{
+    font-style: italic;
+}
+
+Table{
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #925C3F;
+    text-align: center;
+    background-color: #F2CAA7;
+    table-layout: fixed;
+}
+
+table tr,
+table th,
+table td {
+    border: 0.1em solid #5c3b29;
+    overflow-wrap: break-word;
+}
+
+
+Table thead{
+    font-size: 1.5em;
+}
+Table tfoot .events{
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+Table tbody, tfoot{
+    font-size: 1em;
+
+}
+Table .nothing{
+    background-color: #c5aa92;
+}
+
+@media (max-width: 767px) {
+        .hours-table,
+        .hours-table thead,
+        .hours-table tbody,
+        .hours-table tfoot,
+        .hours-table tr,
+        .hours-table th,
+        .hours-table td {
+            display: block;
+            width: 100%;
+        }
+
+    .hours-table caption.italizize {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+
+        }
+
+        .hours-table thead { display: none; }
+
+        .hours-table tr {
+            margin-bottom: 1em;
+            border: 1px solid #925C3F;
+            border-radius: 0.5em;
+            background-color: #F2CAA7;
+            overflow: hidden;
+        }
+        .hours-table td {
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+            gap: 1em;
+            padding: 1em;
+            line-height: 1.35;
+            border: none;
+            border-bottom: 1px solid #5c3b29;
+            text-align: left;
+            overflow-wrap: anywhere;
+            word-break: break-word;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+
+        .hours-table td:last-child { border-bottom: none; }
+
+        .hours-table td::before {
+            content: attr(data-label);
+            font-weight: bold;
+            flex: 0 0 7.5em;
+            margin-right: 0.75em;
+        }
+
+         /*Weekly Events banner row */
+        .hours-table th.events {
+            box-sizing: border-box;
+            display: block;
+            padding: 1em;
+            margin: 0;
+            border: none;
+            background: #cfa27f;
+            text-align: center;
+        }
+    .button {
+        display: inline-flex;
+        flex-direction: row;
+        margin-left: 10.3em;
+        margin-top: 0.5em;
+        padding-right: 5em;
+    }
+    .contact-form label {
+        display: block;
+        text-align: left;
+        padding-left: 1em;
+        width: 100%;
+
+
+    }
+    }
+
+audio{
+    width: 100%;
+}
+
+/* ===== TABLET ===== */
+@media (min-width: 768px) {
+    .button {
+        display: inline-flex;
+        flex-direction: row;
+        margin-left: 10.3em;
+        margin-top: 0.5em;
+    }
+
+    header {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1.5em;
+    }
+    .navbar ul {
+        flex-direction: row;
+    }
+    .navbar li {
+        flex: 1;
+        border-bottom: none;
+        border-right: .2em solid black;
+
+    }
+    .navbar li:last-child {
+        border-right: none;
+    }
+    header img {
+        width: 6.5em;
+    }
+    .food-column {
+        float: left;
+        width: 48%;
+        margin: 1%;
+    }
+    .drink-column {
+        float: left;
+        width: 48%;
+        margin: 1%;
+    }
+    .aside-column {
+        float: left;
+        width: 98%;
+        margin: 1%;
+    }
+
+}
+
+/* ===== DESKTOP ===== */
+@media (min-width: 1024px) {
+    .button {
+        display: inline-flex;
+        flex-direction: row;
+        margin-left: 10.3em;
+        margin-top: 0.5em;
+    }
+    header {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1.5em;
+    }
+
+    .navbar ul {
+        flex-direction: row;
+    }
+
+    .navbar li {
+        flex: 1;
+        border-bottom: none;
+        border-right: .125em solid black;
+
+    }
+
+    .navbar li:last-child {
+        border-right: none;
+    }
+
+    header img {
+        width: 6.5em;
+    }
+
+    .phone-link {
+        display: none;
+    }
+
+    .phone-text {
+        display: inline;
+    }
+
+    @media (min-width: 1024px) {
+        .button {
+            display: inline-flex;
+            flex-direction: row;
+            margin-left: 10.3em;
+            margin-top: 0.5em;
+        }
+        .food-column {
+            float: left;
+            width: 31.33%;
+            margin: 1%;
+        }
+
+        .drink-column {
+            float: left;
+            width: 31.33%;
+            margin: 1%;
+        }
+
+        .aside-column {
+            float: left;
+            width: 31.33%;
+            margin: 1%;
+        }
+    }
+}

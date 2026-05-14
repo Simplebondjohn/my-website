@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="The pages that allows users to contact us via email">
+    <meta name="keywords" content="Bakery, Breaky">
+    <meta name="author" content="John Doe">
+    <meta name="viewport"
+          content="width=device-width,
+             initial-scale=1">
+    <title>Contact Form</title>
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <p><a href="01index.html">
+        <img class="opaci" src="images/breakybakery.svg" alt="The Site Logo for Breaky Bakery">
+    </a>
+    </p>
+    <h1>Breaky Bakery</h1>
+</header>
+<nav class="navbar">
+    <ul>
+        <li><a href="01index.html">Home</a></li>
+        <li><a href="02About.html">About Us</a></li>
+        <li><a href="03products.html">Products</a></li>
+        <li><a href="04media.html">Media</a></li> <!--  IDK-->
+        <li><a href="05data.html">Information</a></li>
+        <li><a href="06contact.html">Contact Form</a></li>
+    </ul>
+</nav>
+<main>
+    <h1>Welcome to the Contact Form</h1>
+    <br>
+
+    <form class="contact-form">
+        <div>
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        </div>
+        <div>
+        <label for="flname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        </div>
+        <div>
+        <label for="femail">Email</label>
+        <input type="text" id="femail" name="email" placeholder="Your email..">
+        </div>
+        <div>
+        <label for ="message">Message/Request</label>
+        <textarea  id="fmessage" name="message"  placeholder="Enter your request"></textarea>
+        </div>
+        <div>
+        <label for="fSubject">Select a Reason:</label>
+        <input type="radio" name="fsubject" id="fpreorder" value="premake" checked> Pre-order food
+        <input type="radio" name="fsubject" id="ffoodidea" value="foodidea"> Food Suggestion Idea
+        </div>
+        <div id="preorder-fields">
+            <label for="orderdate">Select a Date:</label>
+            <input type="date" id="orderdate" name="orderdate">
+
+            <label for="ordertime">Select a Time:</label>
+            <input type="time" id="ordertime" name="ordertime">
+        </div>
+        <div class="button">
+        <button type="button" id="submit">Submit</button>
+        </div>
+        <div class="button">
+            <button id="reset">Reset</button>
+        </div>
+
+    </form>
+</main>
+<footer>
+    &copy; Copyright 2026. All Rights Reserved. <br>
+    <a href="mailto:BreakyBakery@cheify.net">
+        BreakyBakery@cheify.net
+    </a>
+    <br>
+    <a class = "phone-link" href="tel:+555840581105">
+        Call us!
+    </a>
+    <span class="phone-text">Call us: +555840581105</span>
+</footer>
+</body>
+<script src="scripts/index.js">
+</script>
+</html>
