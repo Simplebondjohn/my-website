@@ -4,6 +4,7 @@ body {
     font-family: Verdana, sans-serif;
 }
 
+/* Header */
 header {
     display: flex;
     flex-direction: column;
@@ -96,6 +97,7 @@ h3 {
     border-radius: 0.5em;
 }
 
+/* Images inside the product columns */
 .food-column img,
 .drink-column img,
 .aside-column img {
@@ -115,6 +117,7 @@ figcaption {
     margin-top: 0.5em;
 }
 
+/* Navigation */
 .navbar ul {
     list-style: none;
     padding: 0;
@@ -173,6 +176,7 @@ figcaption {
     display: none;
     margin-top: 0.5em;
 }
+/*Note that the button class has been separted into the media queries; search for .button*/
 
 section main{
     text-align: center;
